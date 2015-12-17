@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yI-V3-Dh9">
+                                <rect key="frame" x="20" y="20" width="560" height="193"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第一行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0i-55-ykk">
+                                        <rect key="frame" x="8" y="8" width="51" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="9Ng-zI-coD"/>
+                                            <constraint firstAttribute="width" constant="51" id="oPt-dZ-lNc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwq-Ux-dfP">
+                                        <rect key="frame" x="154" y="4" width="75" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="4fd-ql-yAk"/>
+                                            <constraint firstAttribute="height" constant="30" id="bNg-QI-Wk7"/>
+                                        </constraints>
+                                        <state key="normal" title="第二个按钮"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYb-an-yl6">
+                                        <rect key="frame" x="244" y="4" width="75" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="HTL-mL-L85"/>
+                                            <constraint firstAttribute="height" constant="30" id="qoY-es-F8V"/>
+                                        </constraints>
+                                        <state key="normal" title="第三个按钮"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pc4-Sa-Ijv">
+                                        <rect key="frame" x="8" y="155" width="103" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="w5X-3N-z0Q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <state key="normal" title="隐藏/显示第一个按钮"/>
+                                        <connections>
+                                            <action selector="clickToHidenOrShowFirstBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UpR-4x-vtf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3h-xK-nhW">
+                                        <rect key="frame" x="131" y="155" width="108" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <state key="normal" title="隐藏/显示第二个按钮"/>
+                                        <connections>
+                                            <action selector="clickToHidenOrShowSecondBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UH2-bY-cvv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOE-wE-YT5">
+                                        <rect key="frame" x="256" y="155" width="112" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <state key="normal" title="隐藏/显示第三个按钮"/>
+                                        <connections>
+                                            <action selector="clickToHidenOrShowThirdBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zoQ-mz-yEV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyc-pz-s1L">
+                                        <rect key="frame" x="69" y="4" width="75" height="30"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="4ZN-hh-tTJ"/>
+                                            <constraint firstAttribute="width" constant="75" id="KUa-mv-pIz"/>
+                                        </constraints>
+                                        <state key="normal" title="第一个按钮"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.898728478" green="1" blue="0.88649429329999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Pc4-Sa-Ijv" firstAttribute="leading" secondItem="0yI-V3-Dh9" secondAttribute="leading" constant="8" id="2ZF-ms-190"/>
+                                    <constraint firstItem="Mwq-Ux-dfP" firstAttribute="leading" secondItem="e0i-55-ykk" secondAttribute="trailing" priority="750" constant="10" id="2uw-J5-EPf"/>
+                                    <constraint firstAttribute="height" constant="193" id="9L0-iC-bEw"/>
+                                    <constraint firstItem="Mwq-Ux-dfP" firstAttribute="top" secondItem="0yI-V3-Dh9" secondAttribute="top" constant="4" id="K5S-0P-fXW"/>
+                                    <constraint firstItem="Hyc-pz-s1L" firstAttribute="leading" secondItem="e0i-55-ykk" secondAttribute="trailing" priority="999" constant="10" id="LIs-uS-gm9"/>
+                                    <constraint firstItem="QYb-an-yl6" firstAttribute="leading" secondItem="Hyc-pz-s1L" secondAttribute="trailing" priority="750" constant="10" id="MZ8-EQ-bZp"/>
+                                    <constraint firstItem="e0i-55-ykk" firstAttribute="top" secondItem="0yI-V3-Dh9" secondAttribute="top" constant="8" id="Qoe-Qg-av1"/>
+                                    <constraint firstItem="Hyc-pz-s1L" firstAttribute="top" secondItem="0yI-V3-Dh9" secondAttribute="top" constant="4" id="RG3-dL-zBg"/>
+                                    <constraint firstItem="QYb-an-yl6" firstAttribute="top" secondItem="0yI-V3-Dh9" secondAttribute="top" constant="4" id="STg-N2-OmJ"/>
+                                    <constraint firstItem="QYb-an-yl6" firstAttribute="leading" secondItem="Mwq-Ux-dfP" secondAttribute="trailing" priority="999" constant="15" id="dMY-ic-AAg"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pc4-Sa-Ijv" secondAttribute="bottom" constant="8" id="fHH-u8-0ey"/>
+                                    <constraint firstItem="QYb-an-yl6" firstAttribute="leading" secondItem="e0i-55-ykk" secondAttribute="trailing" priority="250" constant="10" id="gvs-x2-5GG"/>
+                                    <constraint firstItem="e0i-55-ykk" firstAttribute="leading" secondItem="0yI-V3-Dh9" secondAttribute="leading" constant="8" id="mpD-u4-AQe"/>
+                                    <constraint firstItem="Mwq-Ux-dfP" firstAttribute="leading" secondItem="Hyc-pz-s1L" secondAttribute="trailing" priority="999" constant="10" id="s19-di-2fj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0yI-V3-Dh9" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9Cu-Ky-EYP"/>
+                            <constraint firstItem="0yI-V3-Dh9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ioC-TO-UnD"/>
+                            <constraint firstItem="0yI-V3-Dh9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ltB-Qk-axM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstBtn" destination="Hyc-pz-s1L" id="rBz-vB-tvu"/>
+                        <outlet property="secondBtn" destination="Mwq-Ux-dfP" id="PK8-f5-S8W"/>
+                        <outlet property="secondBtnToFirstBtnConstraint" destination="s19-di-2fj" id="lk7-PQ-FJp"/>
+                        <outlet property="secondBtnToLabelConstraint" destination="2uw-J5-EPf" id="iEn-ZB-vL4"/>
+                        <outlet property="thirdBtn" destination="QYb-an-yl6" id="Yl2-mV-mly"/>
+                        <outlet property="threeBtnToFirstBtnConstraint" destination="MZ8-EQ-bZp" id="gMm-6B-2zA"/>
+                        <outlet property="threeBtnToLabelConstraint" destination="gvs-x2-5GG" id="qSQ-OZ-KCC"/>
+                        <outlet property="threeBtnToSecondBtnConstraint" destination="dMY-ic-AAg" id="Fk6-vl-3nh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="465" y="388"/>
+        </scene>
+    </scenes>
+</document>
